@@ -47,7 +47,7 @@ const CrudFile = () => {
               className="form-control"
               id="name"
               placeholder="Enter Name :"
-              required="true"
+              
               value={formData.name}
               onChange={(e) =>
                 setFormData({ ...formData, name: e.target.value })
