@@ -64,6 +64,7 @@ const AppProvider = ({ children }) => {
       const updatedPeopleList = [...peopleList, formData];
       localStorage.setItem("peopleList", JSON.stringify(updatedPeopleList));
       setPeopleList(updatedPeopleList);
+      toast(`Data Stored`);
       setFormData({
         name: "",
         email: "",
