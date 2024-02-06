@@ -58,6 +58,7 @@ const AppProvider = ({ children }) => {
         toast(`No server available. Please try again after disconnecting your internet...`);
       }
     } 
+      
     else {
       console.log("Data Stored in Local Storage Bcaz You Re Offline");
 
