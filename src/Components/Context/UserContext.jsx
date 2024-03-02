@@ -43,9 +43,9 @@ const AppProvider = ({ children }) => {
           await axios.post(`${BASE_URL}saveUser`, formData);
           toast("Your Data Successfully Stored In DataBase");
 
-          const updatedPeopleList = [...peopleList, formData];
-          localStorage.setItem("peopleList", JSON.stringify(updatedPeopleList));
-          setPeopleList(updatedPeopleList);
+          // const updatedPeopleList = [...peopleList, formData];
+          // localStorage.setItem("peopleList", JSON.stringify(updatedPeopleList));
+          // setPeopleList(updatedPeopleList);
           setFormData({
             name: "",
             email: "",
